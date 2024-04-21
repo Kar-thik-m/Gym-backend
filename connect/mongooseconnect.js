@@ -6,7 +6,7 @@ dotenv.config();
 const username = process.env.DB_USERNAME || '';
 const password = process.env.DB_PASSWORD || '';
 const clusterName=process.env.DB_CLUSTER || '';
-const dbName=process.env.DB_NAME || '';
+const dbName=process.env.DB_DATABASE || '';
 
 
 const cloudMongoUrl=`mongodb+srv://${username}:${password}@ ${clusterName}/${dbName}?retryWrites=true&w=majority&appName=Cluster0`;
